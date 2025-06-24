@@ -1,4 +1,55 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'beautifulhugo'
+baseurl = "furtest.fr"
+title = "furtest's website"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+[pagination]
+pagerSize = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "furtest"
+  info = "Libre software advocate; privacy & cybersecurity enthusiast; low-level development enjoyer."
+  description = "furtest's website and ctf writeups"
+  copyright = "Paul Retourné"
+  license = "GNU GPLv3"
+  avatarurl = "images/pp.png"
+
+  #faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2025
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/furtest/"
+
+[[menu.main]]
+  name = "CTF Writeups"
+  weight = 1
+  url  = "writeups"
+[[menu.main]]
+  name = "Blog"
+  weight = 2
+  url = "posts"
+[[menu.main]]
+  name = "Canary"
+  weight = 3
+  url = "canary"
