@@ -1,0 +1,28 @@
+{{ $page := . }}
+{{ $tag := index $page.Params.tags 0 }}
+{{ with $tag }}
+  {{ $prefix := lower (substr . 0 3) }}
+  {{ $colorMap := dict
+      "rev" "#6366f1"
+      "pwn" "#ef4444"
+      "web" "#3b82f6"
+      "cry" "#10b981"
+      "mis" "#f59e0b"
+      "for" "#8b5cf6"
+      "bin" "#ec4899"
+      "net" "#06b6d4"
+      "ste" "#f472b6"
+      "mob" "#a855f7"
+  }}
+  {{ $color := index $colorMap $prefix | default "#9ca3af" }}  {{/* fallback: gray-400 */}}
+
+  <li style="margin-bottom: 0.75em;">
+    <span style="background-color: {{ $color }}; padding: 0em 0.7em; border-radius: 0.3em; color: #fff; font-size: 0.85em; margin-right: 0.5em;">
+      <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="color: inherit; text-decoration: none;">
+        {{ . }}
+      </a>
+    </span>
+
+    <a class="title" href="{{ $page.Params.externalLink | default $page.RelPermalink }}">{{ $page.Title }}</a>
+  </li>
+{{ end }}

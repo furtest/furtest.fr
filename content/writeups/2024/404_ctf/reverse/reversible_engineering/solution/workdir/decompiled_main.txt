@@ -1,0 +1,41 @@
+
+undefined8 FUN_00101169(int param_1,long param_2)
+
+{
+  int iVar1;
+  undefined8 uVar2;
+  size_t sVar3;
+  void *__s1;
+  undefined8 local_28;
+  undefined8 local_20;
+  int local_c;
+  
+  if (param_1 < 2) {
+    puts("J\'ai besoin d\'un argument!");
+    uVar2 = 1;
+  }
+  else {
+    sVar3 = strlen(*(char **)(param_2 + 8));
+    local_c = (int)sVar3;
+    if (local_c == 0x10) {
+      local_28 = 0x46f0b8f4eff0544d;
+      local_20 = 0x5fb844f850e415f3;
+      __s1 = (void *)FUN_0010123f(*(undefined8 *)(param_2 + 8));
+      iVar1 = memcmp(__s1,&local_28,0x10);
+      if (iVar1 == 0) {
+        puts("GG!");
+        uVar2 = 0;
+      }
+      else {
+        puts("Dommage... Essaie encore!");
+        uVar2 = 1;
+      }
+    }
+    else {
+      puts(&DAT_00102028);
+      uVar2 = 1;
+    }
+  }
+  return uVar2;
+}
+
