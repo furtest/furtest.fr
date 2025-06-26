@@ -122,7 +122,7 @@ unzip chall.zip
 cd ..
 ```
 
-## Programme principal de bruteforce <div id="bruteforce"></div>
+## Programme principal de bruteforce {#bruteforce}
 
 On écrit un programme en C qui fera des appels à la fonction `encrypt` pour permettre le bruteforce.
 
