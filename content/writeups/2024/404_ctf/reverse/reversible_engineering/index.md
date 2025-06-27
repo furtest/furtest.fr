@@ -2,7 +2,7 @@
 date = '2024-05-14T19:00:00+02:00'
 draft = false
 title = 'Reversible engineering'
-tags = [ "rev" ]
+tags = [ "reverse" ]
 +++
 
 **Mon programme ne fonctionne pas à tout les coups il faut le lancer plusieurs fois pour obtenir le flag si quelqu'un arrive à comprendre pourquoi n'hésitez pas à me contacter sur discord (furtest).**
