@@ -10,7 +10,7 @@ Points: 25
 Number of solves: 512  
 Description:  
 Here is a logic circuit that implements an unknown function. What is the value of the four output bits?   
-The flag format is FCSC{<value>}. For example, if the value to find is 0001, the flag would be FCSC{0001}.  
+The flag format is `FCSC{<value>}`. For example, if the value to find is 0001, the flag would be FCSC{0001}.  
 
 ![Circuit picture](./baddcircuit.png)
 
