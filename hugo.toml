@@ -1,4 +1,4 @@
-baseurl = "furtest.fr"
+baseurl = "https://furtest.fr/"
 title = "furtest's website"
 theme = "hugo-coder"
 languagecode = "en"
