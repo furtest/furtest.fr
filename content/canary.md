@@ -4,6 +4,7 @@ draft = false
 title = 'Canary'
 +++
 
+```
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
@@ -31,4 +32,4 @@ TGU51LK1Ms2/dFPKndPtLh1nJo0E3ywZza9lBOYvgrvTkDK4zPA+2Jo0WN7smXTe
 TkfuoauyDfFjGdmhKfs0YDkbj46ZZeMJLPVvo0za3a/1SQR4jqs=
 =750I
 -----END PGP SIGNATURE-----
-
+```
